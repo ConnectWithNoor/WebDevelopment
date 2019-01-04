@@ -1,0 +1,278 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', 'sans-serif;'
+}
+
+header{
+    width: 99.9%;
+    height: 90px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+
+nav .logo img{
+    padding: 0px 0px;
+    height: 80px;
+    float: left;
+    transition: .3s;
+    
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    line-height: 80px;
+    color: #151515;
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+nav ul li a:hover{
+    color: #2D87CB;
+}
+
+nav ul li a:focus{
+    outline: none;
+}
+
+nav ul li a.active{
+    background: #2D87CB;
+    color :#fff;
+    border-radius: 6px;
+}
+
+nav ul li a.active:hover{
+    background: #164669;
+    transition: .3s;
+}
+/* nav end*/ 
+
+section.bodyArea{
+    margin: 0% 0%;
+    width: 99%;
+    height: 70vh;
+}
+
+section.intoText{
+    width: 49%;
+    height: fit-content;
+    margin: 0;
+    margin-top: 20px;
+    float: left;
+}
+
+h3.line1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.6;
+    color: #000;
+    margin: 2% 16%;
+}
+
+h2.line2{
+    font-family: 'Roboto', 'sans=sarif';
+    font-weight: 240;
+    font-size: 23px;
+    letter-spacing: -.1px;
+    line-height: 1.5;
+    color: #737376;
+    margin: 0 16%;
+}
+
+div.btn{
+    line-height: 20px;
+    padding: 12px;
+    margin: 0 16%;
+    margin-right: 66%;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    
+    text-transform: uppercase;
+    background: #2D87CB;
+    color :#fff;
+    border-radius: 6px;
+    transition: .3s;
+}
+div.btn:hover{
+    background: #164669;
+    transition: .3s;   
+}
+
+div.credit{
+    margin-left: 16%;
+    border-top-style:double;
+    border-bottom-style:double;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-top-color:#7cbfcf;
+    border-bottom-color:#7cbfcf;
+    border-top-width:8px;
+    border-bottom-width:8px;
+    line-height: 20%;
+}
+div.credit p.line1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    line-height: 1.6;
+    color: #000;
+    margin: 0 0;
+    padding: 0 3%;
+}
+
+div.credit p.line2{
+    margin: 0 15%;
+    font-family: 'Roboto', 'sans=sarif';
+    font-weight: 240;
+    font-size: 23px;
+    line-height: 1.6;
+    color: #737376;
+}
+
+section.introImg{
+    width: 49.8%;
+    height: 100%;
+    display: inline-flex;
+    float: left;
+}
+
+section.introImg img{
+    margin: auto auto;
+    float: right;
+    transition: .3s;
+}
+
+/* Body Area Ends */
+section.brand{
+    position: absolute;
+    margin: 0% 0%;
+    width: 99%;
+    height: 130px;
+}
+section.brand p.creditLine{
+    margin: 0% 0%;
+    font-family: 'Roboto', 'sans=sarif';
+    font-weight: 240;
+    text-align: center;
+    font-size: 23px;
+    letter-spacing: -.1px;
+    line-height: 1.5;
+    color: #737376;
+   
+}
+
+section.brand a.creditImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+/* overlay */
+
+div.overlay{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,.5);
+}
+
+div.overlay div.overlay-content{
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 15% auto;
+    width: 50%;
+    height: 300px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+span.close{
+    color: #737376;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+span.close:hover,
+span.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu{
+    width: 100%;
+    height: inherit;
+    overflow: auto;
+    z-index: 1;
+}
+
+.menu ul{
+    position: absolute;
+    height: inherit;
+    left: 48%;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    list-style: none;
+}
+
+.menu ul li a{
+    position: relative;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+    margin: 20px 0;
+    display: block;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+.menu ul li a:before{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: -10px;
+    width: 100%;
+    height: 20px;
+    background:rgba(45,135,203, 1);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.menu ul li a:hover:before{
+    transform: scaleX(1);
+}

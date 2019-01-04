@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet-infix.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Infix To Postfix Visualization</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <!--navbar start-->
+            <nav>
+                <div class="logo">
+                    <a href="../index.html"><img src="../img/logo.png"></a>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="Infix.html">Infix to PostFix</a></li>
+                    <li><a href="depth-tree.html">Inorder Traversal</a></li>
+                    <li><a class="active" onclick="popup()" href="#">Get Started</a></li>
+                </ul>
+            </nav>
+    </header>
+    <h1 class="heading">Infix To Postfix Visualization</h1>
+
+    <div id="container">
+        <div id="inputBox">
+            <textarea id="infix"></textarea>
+            <hr>
+            <button id="convert" onclick="convert()">Start Conversion</button>
+            <button  id="convert" onclick='pau()'>Pause</button>
+            <br><br>
+            <div class="label">
+                Postfix Expression is:
+            <br>
+            <output id="postfix"></output>
+            </div>
+        </div>
+        <canvas>
+            Error: Sorry, Your Browser isn't compatible to support canvas tag.
+        </canvas>
+    </div>
+    <script src="../js/stack-canvas-infix.js"></script>
+    <script src="../js/stack.js"></script>
+</body>
+
+</html>

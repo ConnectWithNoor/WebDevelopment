@@ -1,0 +1,148 @@
+header{
+    width: 99.9%;
+    height: 90px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+
+nav .logo img{
+    padding: 0px 0px;
+    height: 80px;
+    float: left;
+    transition: .3s;
+    
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    line-height: 80px;
+    color: #000;
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+nav ul li a:hover{
+    color: #2D87CB;
+}
+
+nav ul li a:focus{
+    outline: none;
+}
+nav ul li a.active{
+    background: #2D87CB;
+    color :#fff;
+    border-radius: 6px;
+}
+
+nav ul li a.active:hover{
+    background: #164669;
+    transition: .3s;
+}
+/* nav end*/ 
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1600px) {}
+
+body{
+    margin: 0 0;
+    padding: 0px;
+    width: auto;
+    height: 100%;
+    font-family: 'Roboto', 'sans-serif;'
+}
+
+.heading {
+    margin: 0 25%;
+    width: inherit;
+    text-align: center;
+    font-weight: 40px;
+    font-size: 36px;
+	line-height: 40px;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
+    border-top: 1px solid #164669;
+    border-bottom: 1px solid #164669;
+    position: relative;
+}
+
+#container {
+    width: 1550px;
+    height: 635px;
+    margin: 0.5%;
+}
+
+#rightBox {
+    margin: 1.4%;
+    width: 600px;
+    height: 580px;
+    float: left;
+    border: 2px solid #164669;;
+}
+
+#insertValue {
+    resize: none;
+    margin: 1.5%;
+    width: 580px;
+    font-size: 24px;
+}
+
+hr {
+    border: hidden;
+
+    width: inherit;
+}
+
+#btn {
+    margin: 0;
+    background: #2D87CB;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 0 20px;
+}
+
+#convert:hover{
+    background: #164669;
+    cursor: pointer;
+}
+
+#stack-canvas {
+    overflow: visible;
+    margin: 1.4%;
+    width: 850px;
+    height: 580px;
+    float: left;
+    border: 2px solid #164669;
+}
+
+#tree-canvas{
+    overflow: visible;
+    margin: 2% 2%;
+    width: 570px;
+    height: 400px;
+    float: left;
+    border: 2px solid #164669;
+}

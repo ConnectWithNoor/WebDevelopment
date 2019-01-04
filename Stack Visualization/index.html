@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stack Project User Interface</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header start-->
+    <header>
+        <div class="wrapper">
+            <!--navbar start-->
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png"></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="pages/infix.html">Infix to PostFix</a></li>
+                    <li><a href="pages/depth-tree.html">Inorder Traversal</a></li>
+                    <li><a class="active" onclick="popup()" href="#">Get Started</a></li>
+                </ul>
+            </nav>
+    </header>
+    <!--navbar end-->
+    <div class="overlay" id="popup">
+        <div class="overlay-content">
+            <span class="close" onclick="closepopup()">&times;</span>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="pages/infix.html">Infix to PostFix</a></li>
+                    <li><a href="pages/depth-tree.html">BST - Inorder Traversal</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="bodyArea">
+        <section class="intoText">
+            <div class="intoText">
+                <h3 class="line1">A Better and Easier way to Learn, the concept of Stack Deeply</h3>
+                <br>
+                <h2 class="line2">Learn by Visualizting how Stack Convert Infix Expressions into 
+                    PostFix Expressions and How BST Depth First Triversal works.
+                </h2>
+                <br>
+                <div class="btn" onclick="popup()">Get Started</div>
+            </div>
+            <br>
+            <div class="credit">
+                <p class="line1">Project By: </p>
+                <p class="line2">Noor Muhammad - CS171029</p>
+                <p class="line2">Roha Sabir - CS171007</p>
+            </div>
+        </section>
+        <section class="introImg">
+            <img src="img/worms.png">
+        </section>
+    </section>
+    <footer>
+        <section class="brand">
+            <p class="creditLine">StackBox is a Semester Project of Course Data Structure and Algorithm</p>
+            <a class="creditImg" href="#"><img src="img/dsu.png"></a>
+        </section>
+    </footer>
+</body>
+<script type="text/javascript" src="js/interface.js"></script>
+
+</html>

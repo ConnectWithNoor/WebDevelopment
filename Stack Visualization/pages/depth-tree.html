@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Binary Search Tree - Depth First Visualization</title>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet-tree.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class>
+            <!--navbar start-->
+            <nav>
+                <div class="logo">
+                    <a href="../index.html"><img src="../img/logo.png"></a>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="Infix.html">Infix to PostFix</a></li>
+                    <li><a href="depth-tree.html">Inorder Traversal</a></li>
+                    <li><a class="active" onclick="popup()" href="#">Get Started</a></li>
+                </ul>
+            </nav>
+            <!--navbar end-->
+    </header>
+    <h1 class="heading">BST - Depth First Visualization</h1>
+
+    <div id="container">
+        <div id="rightBox">
+            <textarea id="insertValue"></textarea>
+            <hr>
+            <button id="btn" onclick="insertTree()">Insert Value</button>
+            <button id="btn" onclick="traversalInorder()">InOrder Traversal</button>
+            <button  id="btn" onclick='pau()'>Pause</button>
+            <canvas id="tree-canvas">
+                Error: Sorry, Your Browser isn't compatible to support canvas tag.
+            </canvas>
+        </div>
+        <canvas id="stack-canvas">
+            Error: Sorry, Your Browser isn't compatible to support canvas tag.
+        </canvas>
+    </div>
+    
+</body>
+<script type="text/javascript" src="../js/stack-canvas-tree.js"></script>
+<script type="text/javascript" src="../js/tree-canvas.js"></script>
+</html>
