@@ -1,7 +1,9 @@
 # WebDevelopment
 The Showcase of my HTML, CSS and JavaScript Work [lastest project by assending order]
 
-Google Geocode API Web Application - Vanilla JavaScript
+Google Map API - Vanilla JavaScript
+
+Google Geocode API - Vanilla JavaScript
 
 Bookmarker Application - Vanilla JavaScript
 
