@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Map API Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        #map{
+            width: 100%px;
+            height: 400px;
+            border: 10px solid #f4f4f4;
+        }
+        h4{
+            margin-top: 20px;
+        }
+        #co-ordinates, h6{
+            display: inline;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover{
+            color: #242424;
+        }
+    </style>
+</head>
+<body>
+    <h4 class="text-center">Google Map API Application</h4>
+    <div class="container">
+        <h6>Enter Co-Ordinates: </h6>
+        <div class="row">
+            <div class="col">
+                <input id="coords-lat-input" type="text" class="form-control" placeholder="lat">
+            </div>
+            <div class="col">
+                <input id="coords-lng-input" type="text" id="co-ordinates" class="form-control" placeholder="lng">
+            </div>
+        </div>
+        <button id="submit"  class="btn btn-primary btn-block">Submit</button>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Karachi - </strong> lat: 24.8607 lng: 67.0011</li>
+            <li class="list-group-item"><strong>Lahore - </strong> lat: 31.5204 lng: 74.3587 </li>
+            <li class="list-group-item"><strong>Islamabad - </strong>lat: 33.6844 lng: 73.0479 </li>
+        </ul>
+        <div id="map"></div>
+    </div>
+    <div class="footer-copyright text-center"><strong>Application by:</strong>
+        <a href="facebook.com/connectwithnoor">Noor Muhammad</a></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
