@@ -1,6 +1,8 @@
 # WebDevelopment
 The Showcase of my HTML, CSS and JavaScript Work [lastest project by assending order]
 
+Reddit Search Application - Vanilla JavaScript
+
 Google Map API - Vanilla JavaScript
 
 Google Geocode API - Vanilla JavaScript
